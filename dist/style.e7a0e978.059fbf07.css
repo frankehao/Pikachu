@@ -1,4 +1,40 @@
-const string = `.nose {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #ffe600;
+}
+
+#demo {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  overflow: scroll;
+  height: 50vh;
+  background-color: #fff;
+  min-width: 100%;
+  padding-left: 10px;
+}
+#demo::-webkit-scrollbar {
+  display: none;
+}
+
+#button {
+  position: fixed;
+  top: 55%;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+}
+#button > button {
+  margin-bottom: 10px;
+  padding: 10px 10px;
+}
+
+/* .nose {
   border: 10px solid black;
   border-color: black transparent transparent;
   border-bottom: none;
@@ -8,9 +44,23 @@ const string = `.nose {
   left: 50%;
   top: 145px;
   margin-left: -10px;
+} */
+@keyframes wave {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  33% {
+    transform: rotateZ(5deg);
+  }
+  66% {
+    transform: rotateZ(-5deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
 }
 
-.nose:hover {
+/* .nose:hover {
   animation: wave 300ms infinite linear;
 }
 .yuan {
@@ -24,6 +74,7 @@ const string = `.nose {
 }
 
 .eye {
+  border: 1px solid red;
   height: 64px;
   width: 64px;
   position: absolute;
@@ -78,7 +129,6 @@ const string = `.nose {
 
 .mouth .up .lip.left {
   border-radius: 0 0 0 50px;
-  border-top-color: transparent;
   border-right-color: transparent;
   transform: rotateZ(-15deg) translateX(-53px);
 }
@@ -152,5 +202,13 @@ const string = `.nose {
 }
 .face.right {
   transform: translateX(200px);
-} `
-export default string
+} */
+.face img {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+}
+.face.left img {
+  transform: rotateY(180deg);
+  transform-origin: 0 0;
+}
