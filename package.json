@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "css.js": "^0.2.3",
+    "webpack": "^5.72.0"
+  },
+  "name": "my-package",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js"
+  }
+}

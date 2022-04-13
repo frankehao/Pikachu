@@ -1,4 +1,27 @@
 const string = `
+/* 先画个小鼻子 */
+.nose {
+  position: relative;
+  top: 145px;
+  width: 0px;
+  height: 0px;
+  border: 10px solid black;
+  border-color: black transparent transparent;
+  border-bottom: none;
+}
+.yuan {
+  position: absolute;
+  top: -16px;
+  right: -10px;
+  width: 20px;
+  height: 6px;
+  border-radius: 10px 10px 0 0;
+  background-color: black;
+}
+.nose {
+  margin-left: -10px;
+  left: 50%;
+}
 /* 然后是皮卡丘的眼睛 */
 .eyes {
   position: absolute;
