@@ -109,7 +109,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var string = ".nose {\n  border: 10px solid black;\n  border-color: black transparent transparent;\n  border-bottom: none;\n  width: 0px;\n  height: 0px;\n  position: relative;\n  left: 50%;\n  top: 145px;\n  margin-left: -10px;\n}\n\n.nose:hover {\n  animation: wave 300ms infinite linear;\n}\n.yuan {\n  position: absolute;\n  width: 20px;\n  height: 6px;\n  top: -16px;\n  right: -10px;\n  border-radius: 10px 10px 0 0;\n  background-color: black;\n}\n\n.eye {\n  height: 64px;\n  width: 64px;\n  position: absolute;\n  left: 50%;\n  top: 100px;\n  margin-left: -32px;\n  background-color: #2e2e2e;\n  border-color: #000;\n  border-radius: 50%;\n}\n.eye::before {\n  content: '';\n  display: block;\n  width: 25px;\n  height: 25px;\n  background-color: #fff;\n  border-radius: 50%;\n  position: absolute;\n  top: 5px;\n  left: 5px;\n  border: 3px solid #000;\n}\n\n.left.eye {\n  transform: translateX(-100px);\n}\n\n.right.eye {\n  transform: translateX(100px);\n}\n\n.mouth {\n  width: 200px;\n  height: 200px;\n  position: absolute;\n  top: 170px;\n  margin-left: -100px;\n  left: 50%;\n}\n\n.mouth .up .lip {\n  position: absolute;\n  border: 3px solid black;\n  width: 100px;\n  height: 30px;\n  border-top-color: transparent;\n  left: 50%;\n  margin-left: -50px;\n  z-index: 1;\n  background-color: #ffe600;\n}\n\n.mouth .up .lip.left {\n  border-radius: 0 0 0 50px;\n  border-top-color: transparent;\n  border-right-color: transparent;\n  transform: rotateZ(-15deg) translateX(-53px);\n}\n.mouth .up .lip.right {\n  border-radius: 0 0 50px 0;\n  border-left-color: transparent;\n  transform: rotateZ(15deg) translateX(53px);\n}\n\n.mouth .up .lip::before {\n  content: '';\n  width: 7px;\n  height: 26px;\n  position: absolute;\n  top: -2px;\n  background-color: #ffe600;\n}\n.mouth .up .lip.left::before {\n  right: -5px;\n}\n\n.mouth .up .lip.right::before {\n  left: -5px;\n}\n\n.mouth .down {\n  position: relative;\n  top: 20px;\n  overflow: hidden;\n  width: 200px;\n  height: 180px;\n}\n\n.mouth .down .yuan1 {\n  border: 3px solid black;\n  height: 1000px;\n  width: 150px;\n  position: absolute;\n  left: 50%;\n  margin-left: -75px;\n  bottom: 0;\n  border-radius: 75px/300px;\n  background-color: #9b000a;\n  overflow: hidden;\n}\n\n.mouth .down .yuan1 .yuan2 {\n  position: absolute;\n  bottom: -70px;\n  left: 50%;\n  margin-left: -100px;\n  width: 200px;\n  height: 200px;\n  border-radius: 120px/100px;\n  background-color: #ff485f;\n}\n\n.face {\n  position: absolute;\n  top: 200px;\n  left: 50%;\n  width: 88px;\n  height: 88px;\n  border: 3px solid black;\n  margin-left: -44px;\n  border-radius: 50%;\n  background-color: #ff0000;\n}\n.face.left {\n  transform: translateX(-200px);\n}\n.face.right {\n  transform: translateX(200px);\n} ";
+var string = "\n/* \u6211\u4EEC\u5148\u753B\u76AE\u5361\u4E18\u7684\u9F3B\u5B50 */\n.nose {\n  position: relative;\n  top: 145px;\n  width: 0px;\n  height: 0px;\n  border: 10px solid black;\n  border-color: black transparent transparent;\n  border-bottom: none;\n}\n.yuan {\n  position: absolute;\n  top: -16px;\n  right: -10px;\n  width: 20px;\n  height: 6px;\n  border-radius: 10px 10px 0 0;\n  background-color: black;\n}\n.nose {\n  margin-left: -10px;\n  left: 50%;\n}\n/* \u7136\u540E\u662F\u76AE\u5361\u4E18\u7684\u773C\u775B */\n#eyes {\n  position: absolute;\n  top: 100px;\n  height: 64px;\n  width: 64px;\n  border-radius: 50%;\n  background-color: #2e2e2e;\n  border-color: #000;\n}\n/* \u76AE\u5361\u4E18\u7684\u773C\u73E0\u662F\u767D\u8272\u7684 */\n#eye_ball {\n  position: absolute;\n  content: '';\n  display: block;\n  width: 25px;\n  height: 25px;\n  border-radius: 50%;\n  border: 3px solid #000;\n  background-color: #fff;\n}\n\n.left.eye {\n  margin-left: -32px;\n  left: 50%;\n  transform: translateX(-100px);\n}\n\n.right.eye {\n  margin-left: -32px;\n  left: 50%;\n  transform: translateX(100px);\n}\n\n/* \u8BE5\u753B\u76AE\u5361\u4E18\u7684\u816E\u5E2E\u5B50\u4E86 */\n.face {\n  position: absolute;\n  top: 200px;\n  width: 88px;\n  height: 88px;\n  border-radius: 50%;\n  border: 3px solid black;\n  background-color: #ff0000;\n}\n.face {\n  left: 50%;\n  margin-left: -44px;\n}\n.face.left {\n  transform: translateX(-200px);\n}\n.face.right {\n  transform: translateX(200px);\n}\n\n/* \u63A5\u7740\u753B\u76AE\u5361\u4E18\u7684\u5C0F\u5634\u5DF4 */\n.mouth {\n  position: absolute;\n  top: 170px;\n  width: 200px;\n  height: 200px;\n  left: 50%;\n  margin-left: -100px;\n}\n/* \u5148\u662F\u4E0A\u5634\u5507 */\n.mouth .up .lip.left {\n  transform: translateX(-53px);\n}\n.mouth .up .lip.right {\n  transform: translateX(53px);\n}\n\n.mouth .up .lip {\n  z-index: 1;\n  background-color: #ffe600;\n  position: absolute;\n  margin-left: -50px;\n  left: 50%;\n  width: 100px;\n  height: 30px;\n  border: 3px solid black;\n}\n\n.mouth .up .lip.left {\n  border-radius: 0 0 0 50px;\n  border-top-color: transparent;\n  border-right-color: transparent;\n}\n.mouth .up .lip.right {\n  border-radius: 0 0 50px 0;\n  border-top-color: transparent;\n  border-left-color: transparent;\n}\n\n.mouth .up .lip::before {\n  position: absolute;\n  top: -2px;\n  content: '';\n  background-color: #ffe600;\n}\n.mouth .up .lip.left::before {\n  right: -5px;\n  width: 7px;\n  height: 26px;\n}\n.mouth .up .lip.right::before {\n  left: -5px;\n  width: 7px;\n  height: 26px;\n}\n\n.mouth .up .lip::after {\n  position: absolute;\n  top: -4px;\n  content: '';\n  background-color: #ffe600;\n}\n.mouth .up .lip.left::after {\n  right: -5px;\n  width: 98px;\n  height: 2px;\n}\n\n.mouth .up .lip.right::after {\n  left: -5px;\n  width: 98px;\n  height: 2px;\n}\n\n.mouth .up .lip.left {\n  transform: translateX(-53px) rotateZ(-15deg);\n}\n.mouth .up .lip.right {\n  transform: translateX(53px) rotateZ(15deg);\n}\n\n/* \u7136\u540E\u662F\u4E0B\u5634\u5507 */\n.mouth .down {\n  overflow: hidden;\n  width: 200px;\n  height: 180px;\n  position: relative;\n  top: 15px;\n}\n\n.mouth .down .yuan1 {\n  position: absolute;\n  left: 50%;\n  bottom: 0;\n  margin-left: -75px;\n  overflow: hidden;\n  height: 1000px;\n  width: 150px;\n  border-radius: 75px/300px;\n  border: 3px solid black;\n  background-color: #9b000a;\n}\n\n.mouth .down .yuan1 .yuan2 {\n  position: absolute;\n  bottom: -70px;\n  left: 50%;\n  margin-left: -100px;\n  width: 200px;\n  height: 200px;\n  border-radius: 120px/100px;\n  background-color: #ff485f;\n}\n\n/* \u8BA9\u76AE\u5361\u4E18\u7684\u5C0F\u9F3B\u5B50\u52A8\u8D77\u6765 */\n.nose {\n  animation: wave 300ms infinite linear;\n}\n\n/* \u8FD9\u53EA\u76AE\u5361\u4E18\u5C31\u9001\u7ED9\u4F60\u5566 */\n";
 exports.default = string;
 },{}],"main.js":[function(require,module,exports) {
 'use strict';
@@ -177,6 +177,65 @@ var player = {
   }
 };
 player.init();
+
+// 眼球转动
+var eyes, eye_ball, eyes_L, eyes_T, eye_ball_L, eye_ball_T;
+
+eyes = document.getElementById('eyes'); //眼睛
+
+eye_ball = document.getElementById('eye-ball'); //眼球
+
+eyes_L = eyes.offsetLeft + eyes.offsetWidth / 2; //眼睛中心位置
+console.log(eyes.offsetWidth);
+eyes_T = eyes.offsetTop + eyes.offsetHeight / 2;
+
+eye_ball_L = eye_ball.offsetLeft + eye_ball.offsetWidth / 2; //眼球中心位置
+
+eye_ball_T = eye_ball.offsetTop + eye_ball.offsetHeight / 2;
+
+addEventListener('mousemove', function (e) {
+  var e = e || window.event;
+  var point_y = void 0,
+      point_x = void 0,
+      point_radius = void 0,
+      point_radian = void 0,
+      eye_ball_pos = void 0,
+      eye_ball_canMove_max = void 0;
+  //计算眼珠可移动的的最大半径范围
+  eye_ball_canMove_max = eyes.clientWidth / 2 - eye_ball.offsetWidth / 2;
+  console.log(eye_ball_canMove_max);point_y = e.clientY - eyes_T;
+  point_x = e.clientX - eyes_L;
+
+
+  point_radius = Math.floor(
+  // 向下取整
+  radius({
+    x: point_x,
+
+    y: point_y
+  }));
+
+  point_radian = Math.atan2(point_x, point_y);
+
+  //计算眼球的位置,眼球半径随着鼠标与眼睛中心的半径以的1:15的变化率变化，不得超过出眼睛，限制最小值
+  eye_ball_pos = pos_xy(Math.min(eye_ball_canMove_max, point_radius / 15), point_radian);
+  eye_ball.style.cssText = 'left:' + (eye_ball_pos.x + eye_ball_canMove_max) + 'px;\n            top: ' + (eye_ball_pos.y + eye_ball_canMove_max) + 'px;';
+}, false);
+//传入半径,弧度.计算x，y坐标
+
+function pos_xy(radius, radian) {
+  return {
+    x: Math.sin(radian) * radius,
+
+    y: Math.cos(radian) * radius
+  };
+}
+
+// 勾股定理计算半径
+
+function radius(pos) {
+  return Math.sqrt(Math.pow(pos.x, 2) + Math.pow(pos.y, 2));
+}
 },{"./css.js":"css.js"}],"C:\\Users\\二狗哥\\AppData\\Local\\Yarn\\Data\\global\\node_modules\\parcel\\src\\builtins\\hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -206,7 +265,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '57826' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50830' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
