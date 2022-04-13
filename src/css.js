@@ -1,29 +1,6 @@
 const string = `
-/* 我们先画皮卡丘的鼻子 */
-.nose {
-  position: relative;
-  top: 145px;
-  width: 0px;
-  height: 0px;
-  border: 10px solid black;
-  border-color: black transparent transparent;
-  border-bottom: none;
-}
-.yuan {
-  position: absolute;
-  top: -16px;
-  right: -10px;
-  width: 20px;
-  height: 6px;
-  border-radius: 10px 10px 0 0;
-  background-color: black;
-}
-.nose {
-  margin-left: -10px;
-  left: 50%;
-}
 /* 然后是皮卡丘的眼睛 */
-#eyes {
+.eyes {
   position: absolute;
   top: 100px;
   height: 64px;
@@ -33,7 +10,7 @@ const string = `
   border-color: #000;
 }
 /* 皮卡丘的眼珠是白色的 */
-#eye_ball {
+.eye-ball {
   position: absolute;
   content: '';
   display: block;
@@ -44,13 +21,13 @@ const string = `
   background-color: #fff;
 }
 
-.left.eye {
+.left.eyes {
   margin-left: -32px;
   left: 50%;
   transform: translateX(-100px);
 }
 
-.right.eye {
+.right.eyes {
   margin-left: -32px;
   left: 50%;
   transform: translateX(100px);
